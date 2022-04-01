@@ -1,8 +1,18 @@
 .buttonRow {
+    position: relative;
     overflow-x: auto;
     white-space: nowrap;
     margin-left: -22px;
     margin-right: -22px;
     margin-bottom: -22px;
     padding: 22px;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+
+    .buttonRow::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
 }

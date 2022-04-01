@@ -45,3 +45,52 @@
 .controlColumn {
   width:50%;
 }
+
+/* mobile */
+@media screen and (max-width: 480px) {
+
+  .perspective {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .characterWrapper {
+    top: 5%;
+    left: 0;
+    bottom: unset;
+    width: 100%;
+  }
+
+  .controlColumn {
+    width:100%;
+    white-space: nowrap;
+  }
+
+  .characterEditor {
+    padding-top: 100%;
+    padding-bottom: 64px;
+    height: 100%;
+  }
+
+  .maxWidthWrapper {
+    overflow-x: auto;
+    z-index: 2;
+  }
+
+  .maxWidthWrapper::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+
+  
+}
